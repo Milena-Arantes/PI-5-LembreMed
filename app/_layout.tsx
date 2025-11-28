@@ -49,8 +49,8 @@ export default function Layout() {
         setTimeout(async () => {
           const status = syncService.getStatus();
 
-          //console.log("[status do SyncService:", status);
-          //console.log("executando teste do Observer...");
+          console.log("status do SyncService:", status);
+          console.log("teste observer");
 
           await syncService.testObserver();
         }, 2000);

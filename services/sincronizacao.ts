@@ -75,6 +75,20 @@ class SyncService {
     await this.syncPendingLembretes();
   }
 
+  public getStatus(): { isActive: boolean; isSyncing: boolean; observerCount: number } {
+    return {
+      isActive: this.realm !== null && !this.realm.isClosed,
+      isSyncing: this.isSyncing,
+      observerCount: this.observers.length
+    };
+  }
+
+  public async testObserver(): Promise<void> {
+    console.log("testando observer");
+    console.log("observers registrados:", this.observers.length);
+    console.log("realm ativo:", this.realm !== null && !this.realm.isClosed);
+  }
+
   private onLembretesChange = (collection: any, changes: any) => {
     if (!changes) {
       this.syncPendingLembretes();
