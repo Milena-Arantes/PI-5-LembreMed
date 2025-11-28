@@ -1,3 +1,12 @@
+![Fatec](./Fatec.jpg)
+
+##  Equipe de Desenvolvimento
+
+- **ANDRÉIA DOMINGOS SERAFIM**
+- **GABRIEL CRUZ DOS PASSOS**
+- **MILENA OLIVEIRA ARANTES**
+- **NÚBIA CAROLINE RAMOS CISCATI**
+
 # LembreMed 💊
 
 Aplicativo mobile para gerenciamento de lembretes de medicamentos, desenvolvido com React Native e Expo. O app permite criar lembretes personalizados com notificações push e sincronização em tempo real usando Firebase.
